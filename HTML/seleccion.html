@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Selección de Materias</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/estiloSeleccion.css"  />
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="application/javascript" src="../JS/funcionesSeleccion.js"></script>
+        <script type="application/javascript" src="../JS/funcionesConfirmacion.js"></script>
+    </head>
+    <body>
+        <div class="universidadEncabezado">
+            <h1>Instituto de Alejandría</h1>
+        </div>
+        <div class="enlace">
+            <p><a href="../HTML/principal.html">Registro de Usuario</a> <b>></b> Selección de Materias.</p>
+        </div>
+        <div class="materiaContenedor">
+            <div class="seleccionEncabezado">
+                <h1>Selección de Materias.</h1>
+            </div>
+            <button id="botonCargaData" onclick="`${loadLocalStorage()}`">Cargar Materias</button>
+			    <br  />
+            <form action="upload.php" method="POST" name="OPT_Materia1">
+                <p class="etiqueta" id="Asignatura_1"></p>
+				<input class="diahoraMateria" name="RBTN_Materia1" type="radio" value="08:00 - 11:00">Lun. 08:00 - 11:00.
+                <input class="diahoraMateria" name="RBTN_Materia1" type="radio" value="16:00 - 18:00">Lun. 16:00 - 18:00.
+                <input class="diahoraMateria" name="RBTN_Materia1" type="radio" value="13:00 - 15:00">Lun. 13:00 - 15:00.
+            </form>
+            <form action="upload.php" method="POST" name="OPT_Materia2">
+                <p class="etiqueta" id="Asignatura_2"></p>
+				<input class="diahoraMateria" name="RBTN_Materia2" type="radio" value="08:00 - 11:00">Mar. 08:00 - 11:00.
+				<input class="diahoraMateria" name="RBTN_Materia2" type="radio" value="13:00 - 15:00">Mar. 13:00 - 15:00.
+				<input class="diahoraMateria" name="RBTN_Materia2" type="radio" value="16:00 - 18:00">Mar. 16:00 - 18:00.
+			</form>
+            <form action="upload.php" method="POST" name="OPT_Materia3">
+                <p class="etiqueta" id="Asignatura_3"></p>
+				<input class="diahoraMateria" name="RBTN_Materia3" type="radio" value="08:00 - 11:00">Mie. 08:00 - 11:00.
+				<input class="diahoraMateria" name="RBTN_Materia3" type="radio" value="13:00 - 15:00">Mie. 13:00 - 15:00.
+				<input class="diahoraMateria" name="RBTN_Materia3" type="radio" value="16:00 - 18:00">Mie. 16:00 - 18:00.
+			</form>
+            <form action="upload.php" method="POST" name="OPT_Materia4">
+                <p class="etiqueta" id="Asignatura_4"></p>
+                <input class="diahoraMateria" name="RBTN_Materia4" type="radio" value="08:00 - 11:00">Jue. 08:00 - 11:00.
+				<input class="diahoraMateria" name="RBTN_Materia4" type="radio" value="13:00 - 15:00">Jue. 13:00 - 15:00.
+				<input class="diahoraMateria" name="RBTN_Materia4" type="radio" value="16:00 - 18:00">Jue. 16:00 - 18:00.
+			</form>
+            <form action="upload.php" method="POST" name="OPT_Materia5">
+                <p class="etiqueta" id="Asignatura_5"></p>
+                <input class="diahoraMateria" name="RBTN_Materia5" type="radio" value="08:00 - 11:00">Vie. 08:00 - 11:00.
+                <input class="diahoraMateria" name="RBTN_Materia5" type="radio" value="13:00 - 15:00">Vie. 13:00 - 15:00.
+                <input class="diahoraMateria" name="RBTN_Materia5" type="radio" value="16:00 - 18:00">Vie. 16:00 - 18:00.
+            </form>
+            <div class="botones">
+                <form>
+                    <button onclick="$clean" id="BTN_Limpiar">Limpiar</button>
+                </form>
+                <button id="BTN_Registrar" onclick="`${verificacionHorario ()}`"><a href="../HTML/confirmacion.html">Aceptar</a></button>
+            </div>
+        </div>
+    </body>
+</html>

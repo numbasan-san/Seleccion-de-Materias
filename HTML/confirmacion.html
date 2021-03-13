@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Confirmación</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/estiloConfirmacion.css"  />
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="application/javascript" src="../JS/funcionesConfirmacion.js"></script>
+    </head>
+    <body>
+        <div class="universidadEncabezado">
+            <h1>Instituto de Alejandría</h1>
+        </div>
+        <div class="enlaces">
+            <p><a href="../HTML/principal.html">Registro de Usuario</a><b> > </b><a href="../HTML/seleccion.html">Selección de Materias</a><b> > </b>Confirmación.</p>
+        </div>
+        <div class="confirmacionTitulo">
+            <h2>Confirmación</h2>
+        </div>
+        <div class="confirmacionDatos">
+            <h3>Datos de Usuario</h3>
+            <button id="botonCargaData" onclick="`${loadAllLocalStorage()}`">Cargar Datos</button>
+            <p>Nombre: <label id="OTP_Nombre"></label></p>
+            <p>Apellido: <label id="OTP_Apellido"></label></p>
+            <p>Provincia: <label id="OTP_Provincia"></label></p>
+            <p>Ciudad: <label id="OTP_Ciudad"></label></p>
+            <p>Sector: <label id="OTP_Sector"></label></p>
+            <p>Calle: <label id="OTP_Calle"></label></p>
+            <p>Carrera: <label id="OTP_Carrera"></label></p>
+        </div>
+        <div class="confirmacionHorarioMaterias">
+            <p>Horario</p>
+            <table>
+                <tr>
+                    <td>Asignatura/Día</td>
+                    <td>Lun</td>
+                    <td>Mar</td>
+                    <td>Mie</td>
+                    <td>Jue</td>
+                    <td>Vie</td>
+                </tr>
+                <tr class="Materia#1">
+                    <td id="materia#1">Materia#1</td>
+                    <td id="materia#1Lun"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="Materia#2">
+                    <td id="materia#2">Materia#2</td>
+                    <td></td>
+                    <td id="materia#2Mar"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="Materia#3">
+                    <td id="materia#3">Materia#3</td>
+                    <td></td>
+                    <td></td>
+                    <td id="materia#3Mie"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="Materia#4">
+                    <td id="materia#4">Materia#4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="materia#4Jue"></td>
+                    <td></td>
+                </tr>
+                <tr class="Materia#5">
+                    <td id="materia#5">Materia#5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="materia#5Vie"></td>
+                </tr>
+            </table>
+            <div class="boton">
+                <button onclick="alert('Los datos han sido guardados exitosamente.')" id="BTN_Aceptar">Aceptar</button>
+            </div>
+        </div>
+    </body>
+</html>

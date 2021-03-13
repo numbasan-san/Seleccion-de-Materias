@@ -1,0 +1,61 @@
+.universidadEncabezado h1 {
+    padding: 1%;
+    text-align: center;
+    border: 1px solid black;
+    font-style: italic;
+    color: rgb(255, 115, 0);
+}
+.enlace {
+    margin-top: 2.5%;
+    text-align: center;
+}
+#botonCargaData {
+    height: 25px;
+    background-color: black;
+    color: white;
+	font-weight: bold;
+    font-family: 'Times New Roman';
+    border-color: rgb(255, 115, 0);
+}
+.materiaContenedor {
+    border: 1px solid black;
+    width: 37%;
+    padding: 1.5%;
+    margin-left: 30%;
+}
+.materiaContenedor h1 {
+    text-align: center !important;
+}
+.etiqueta, .comboboxes {
+    font-size: 18px;
+    font-family: 'Times New Roman';
+}
+.botones {
+    margin-top: 2%;
+    margin-left: 70%;
+    font-family: 'Times New Roman';
+    font-size: 15px;
+}
+.diahoraMateria {
+    margin-left: 5%;
+}
+#BTN_Limpiar, #BTN_Registrar {
+    font-family: 'Times New Roman';
+    font-size: 15px;
+    height: 27px;
+    width: 70px;
+	cursor: pointer;
+	font-weight: bold;
+}
+#BTN_Registrar, a:link, a:hover, a:active, a  {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 115, 0);
+    border-color: orange;
+    width: 80px !important;
+    text-decoration: none;
+}
+#BTN_Limpiar {
+    background-color: orange;
+    color: rgb(0, 0, 0);
+    border-color: rgb(46, 40, 40);
+}

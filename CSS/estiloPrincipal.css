@@ -1,0 +1,71 @@
+.universidadEncabezado h1 {
+    padding: 1%;
+    text-align: center;
+    border: 1px solid black;
+    font-style: italic;
+    color: rgb(255, 115, 0);
+    margin: 0%;
+}
+body {
+    font-family: 'Times New Roman';
+}
+.universidadEncabezado {
+    padding: 1%;
+    text-align: center;
+}
+.registroContenedor {
+    border: 1px solid black;
+    margin-left: 30%;
+    margin-right: 35%;
+    margin-top: 5.65%;
+    padding: 2%;
+	width: 30%;
+}
+#registroTitulo {
+    font-size: 35px;
+    margin-top: 1% !important;
+}
+.etiqueta, .inputs, .inputBTN {
+    font-size: 18px;
+}
+.inputs {
+    width: 80%;
+    font-family: 'Times New Roman';
+    padding: 0.099%;
+    margin-bottom: 1.8%;
+}
+.botones {
+    margin-top: 2%;
+    margin-left: 65%;
+    font-family: 'Times New Roman';
+    font-size: 15px;
+    
+}
+#BTN_Limpiar, #BTN_Registrar {
+    font-family: 'Times New Roman';
+    font-size: 15px;
+    height: 27px;
+    width: 70px;
+	cursor: pointer;
+	font-weight: bold;
+}
+#RBTN_Limpiar {
+    font-family: 'Times New Roman';
+    font-size: 15px;
+    height: 27px;
+    width: 150px;
+	cursor: pointer;
+	font-weight: bold;
+}
+#BTN_Registrar, a:link, a:hover, a:active, a  {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 115, 0);
+    border-color: orange;
+    width: 80px !important;
+    text-decoration: none;
+}
+#BTN_Limpiar {
+    background-color: orange;
+    color: rgb(0, 0, 0);
+    border-color: rgb(46, 40, 40);
+}

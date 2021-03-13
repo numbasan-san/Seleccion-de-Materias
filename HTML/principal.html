@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registro de Usuario</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/estiloPrincipal.css"  />
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="application/javascript" src="../JS/funcionesPrincipal.js"></script>
+        <script type="application/javascript" src="../JS/funcionesConfirmacion.js"></script>
+    </head>
+    <body>
+        <div class="universidadEncabezado">
+            <h1>Instituto de Alejandría</h1>
+        </div>
+        <div class="registroContenedor">
+            <h4 id="registroTitulo">Registro</h4>
+            <p>Ingrese los datos correspondientes.</p>
+            <form action="upload.php" method="POST">
+                <label class="etiqueta">Nombre: </label>
+                <input type="text" class="inputs" id="INP_Nombre">
+            </form>
+            <form action="upload.php" method="POST">
+                <label class="etiqueta">Apellido: </label>
+                <input type="text" class="inputs" id="INP_Apellido">
+            </form>
+            <form action="upload.php" method="POST">
+                <label class="etiqueta">Provincia: </label>
+                <input type="text" class="inputs" id="INP_Provincia">
+            </form>
+            <form action="upload.php" method="POST">
+                <label class="etiqueta">Ciudad: </label>
+                <input type="text" class="inputs" id="INP_Ciudad">
+            </form>
+            <form action="upload.php" method="POST">
+                <label class="etiqueta">Sector: </label>
+                <input type="text" class="inputs" id="INP_Sector">
+            </form>
+            <form action="upload.php" method="POST">
+                <label class="etiqueta">Calle: </label>
+                <input type="text" class="inputs" id="INP_Calle">
+            </form>
+            <form action="upload.php" method="POST" name="RBTN_Carrera">
+                <label class="etiqueta">Carrera: </label>
+				<div class="inputBTN">
+					<input type="radio" name="OPT_Carrera" value="Desarrollo de Software">Desarrollo de Software
+					<input type="radio" name="OPT_Carrera" value="Mecatrónica">Mecatrónica
+					<input type="radio" name="OPT_Carrera" value="Multimedia">Multimedia
+				</div>
+            </form>
+            <div class="botones">
+                <form>
+                    <button onclick="$clean" id="BTN_Limpiar">Limpiar</button>
+                </form>
+                <button id="BTN_Registrar" onclick="`${saveNgetLocalStorage()}`"><a href="../HTML/seleccion.html">Registrar</a></button>
+            </div>
+        </div>
+    </body>
+</html>
